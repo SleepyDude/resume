@@ -1,6 +1,6 @@
 # Customized JSON Resume Theme: Caffeine
 
-🖼️ This is a slightly tweaked version of the [Caffeine theme](https://github.com/kelyvin/jsonresume-theme-caffeine). Tweaked to fit my design preferences.
+🖼️ This is a slightly tweaked version of the [Caffeine theme](https://github.com/kelyvin/jsonresume-theme-caffeine). Tweaked to fit my design preferences. Published on NPM and GitHub Registry.
 
 <details>
   <summary>Click to expand README.md of the source repository!</summary>
