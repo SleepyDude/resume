@@ -1,14 +1,10 @@
-{{#if resume.work.length}}
+{{#if resume.projects.length}}
 <div class="container work-container">
-  {{> title value="Experience"}}
+  {{> title value="Open Source Projects"}}
 
-  {{#each resume.work}}
+  {{#each resume.projects}}
   <section class="item">
-    {{> section-header name=this.name }}
-
-    {{#if position}}
-      <h4>{{position}}</h4>
-    {{/if}}
+    {{> section-header-project name=this.name }}
 
     {{#if summary}}
       <p class="summary">{{summary}}</p>
