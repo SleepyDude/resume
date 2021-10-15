@@ -1,3 +1,10 @@
+# Customized JSON Resume Theme: Caffeine
+
+🖼️ This is a slightly tweaked version of the [Caffeine theme](https://github.com/kelyvin/jsonresume-theme-caffeine). Tweaked to fit my design preferences.
+
+<details>
+  <summary>Click to expand README.md of the source repository!</summary>
+
 # jsonresume-theme-caffeine ![](https://travis-ci.org/kelyvin/jsonresume-theme-caffeine.svg?branch=master) [![npm version](https://badge.fury.io/js/jsonresume-theme-caffeine.svg)](https://www.npmjs.com/package/jsonresume-theme-caffeine)
 
 This is the Caffeine theme repository for the [Json Resume](https://jsonresume.org/) project. Unlike the [json-theme-boilerplate](https://github.com/jsonresume/jsonresume-theme-boilerplate) project, this environment has a much improved developer environment to make editing your theme super easy to do.
@@ -152,3 +159,5 @@ The gulp folder holds all the modularized gulp tasks/configs. Anything gulp rela
 
 #### index.js
 This is the file that will return the HTML to the theme server and run against the resume-cli. Not much change here from the jsonresume-theme-boilerplate except that it has been modified to accomodate this file system.
+
+  </details>
