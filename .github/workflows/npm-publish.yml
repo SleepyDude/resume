@@ -15,6 +15,7 @@ jobs:
           node-version: 14
           registry-url: https://registry.npmjs.org/
       - run: yarn install
+      - run: npx gulp
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.PUBLISH_NPM_TOKEN}}
@@ -31,6 +32,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@anthonyjdella'
       - run: yarn install
+      - run: npx gulp
       - run: echo registry=https://npm.pkg.github.com/anthonyjdella >> .npmrc
       - run: npm publish
         env:
