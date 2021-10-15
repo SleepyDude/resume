@@ -57,9 +57,11 @@ handlebars.registerHelper({
 
 
 function render(resume) {
-  let dir = __dirname + '/public',
-    css = fs.readFileSync(dir + '/styles/main.css', 'utf-8'),
-    resumeTemplate = fs.readFileSync(dir + '/views/resume.hbs', 'utf-8');
+  console.log("Inside Render");
+  let dir = __dirname + '/public';
+  let css = fs.readFileSync(dir + '/styles/main.css', 'utf-8');
+  let resumeTemplate = fs.readFileSync(dir + '/views/resume.hbs', 'utf-8');
+  console.log("dir: " + dir);
 
   let Handlebars = handlebarsWax(handlebars);
 
