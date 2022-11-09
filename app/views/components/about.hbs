@@ -9,11 +9,11 @@
   {{/if}}
 
   {{#if email}}
-    {{> info-tag text=this.email icon="fa-envelope-o"}}
+    {{> email text=this.email icon="fa-envelope-o" email=this.email}}
   {{/if}}
 
   {{#if phone}}
-    {{> info-tag text=this.phone icon="fa-mobile"}}
+    {{> phone text=this.phone icon="fa-mobile" phone=this.phone}}
   {{/if}}
 
   {{#if website}}

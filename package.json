@@ -2,7 +2,7 @@
   "author": "Anthony Dellavecchia",
   "name": "@anthonyjdella/jsonresume-theme-anthonyjdella-caffeine",
   "description": "Caffeine theme for JSON Resume",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "keywords": [
     "json",
     "resume",
@@ -16,6 +16,7 @@
   "license": "MIT",
   "scripts": {
     "start": "npx gulp && npx resume serve --theme .",
+    "build": "mkdir -p public && resume export public/index.html --theme \"$(pwd)\"",
     "export": "npx gulp && npx resume export resume --format pdf --theme ."
   },
   "devDependencies": {
@@ -37,7 +38,7 @@
     "gulp-load-plugins": "^2.0.1",
     "gulp-plumber": "^1.1.0",
     "gulp-replace": "^1.0.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^5.1.0",
     "gulp-serve": "^1.4.0",
     "gulp-size": "^3.0.0",
     "gulp-uglify": "^3.0.2",
@@ -47,6 +48,7 @@
     "lazypipe": "^1.0.1",
     "opn": "^6.0.0",
     "require-dir": "^1.2.0",
+    "sass": "^1.56.0",
     "serve-index": "^1.8.0",
     "yargs": "^15.0.2"
   },

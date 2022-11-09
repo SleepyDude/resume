@@ -10,14 +10,14 @@ Swag.registerHelpers(handlebars);
 
 handlebars.registerHelper({
   removeProtocol: function (url) {
-    return url.replace(/.*?:\/\//g, '');
+    return url.replace(/.*?:\/\//g, "");
   },
 
   concat: function () {
-    let res = '';
+    let res = "";
 
     for (let arg in arguments) {
-      if (typeof arguments[arg] !== 'object') {
+      if (typeof arguments[arg] !== "object") {
         res += arguments[arg];
       }
     }
@@ -31,28 +31,39 @@ handlebars.registerHelper({
       city: city,
       subdivision: region,
       postalCode: postalCode,
-      countryCode: countryCode
+      countryCode: countryCode,
     });
 
-
-    return addressList.join('<br/>');
+    return addressList.join("<br/>");
   },
 
   formatDate: function (date) {
-    return moment(date).format('MM/YYYY');
+    return moment(date).format("MM/YYYY");
+  },
+
+  formatDateWork: function (dateString) {
+    const parsedDate = new Date(dateString);
+    if (dateString != "present") {
+      return `${String(parsedDate.getMonth() + 1).padStart(
+        2,
+        "0"
+      )}/${parsedDate.getFullYear()}`;
+    } else {
+      return "present";
+    }
   },
 
   formatDateEdu: function (date) {
-    return moment(date).format('YYYY');
+    return moment(date).format("YYYY");
   },
 
   ifEquals: function (arg1, arg2, options) {
-    return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+    return arg1 == arg2 ? options.fn(this) : options.inverse(this);
   },
 
   ifNotEquals: function (arg1, arg2, options) {
-    return (arg1 != arg2) ? options.fn(this) : options.inverse(this);
-  }
+    return arg1 != arg2 ? options.fn(this) : options.inverse(this);
+  },
 });
 
 
