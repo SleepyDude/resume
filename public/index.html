@@ -1,0 +1,704 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <title>Evgenii Kolodin</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+    /* Utils */ /*----- Colors -----*/
+/*----- Fonts -----*/
+/*----- Dimensions and sizes -----*/
+/* Base */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v25/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_GbQbMZhKg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v25/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_N_XbMZhKg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background: #f8f8f8;
+  margin: 50px 0 100px;
+  letter-spacing: 0.06px;
+  color: #39424B;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+h3 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
+h3.bold {
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+h4.bold {
+  font-weight: 700;
+}
+
+h5 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+}
+h5.italic {
+  font-style: italic;
+}
+
+h6 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #2895F1;
+}
+a .fa-external-link {
+  font-size: 10px;
+  vertical-align: text-top;
+}
+
+p,
+li {
+  font-size: 11px;
+}
+
+blockquote {
+  font-size: 11px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 10px 25px;
+}
+
+em {
+  color: #999;
+}
+
+ul {
+  margin: 10px 0 0;
+  -webkit-padding-start: 25px;
+}
+ul li {
+  padding-left: 10px;
+}
+ul.minimal {
+  list-style: none;
+  padding: 0;
+}
+ul.minimal li {
+  margin-bottom: 3px;
+  padding-left: 0;
+}
+ul.two-column {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 28px;
+  column-count: 2;
+  column-gap: 28px;
+}
+ul.two-column li {
+  padding-left: 0;
+}
+
+@page {
+  size: A4;
+}
+.container {
+  padding-top: 15px;
+}
+
+.keyline {
+  width: 45px;
+  margin: 8px 0 10px;
+  border-top: 1px solid #5d78ff;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.profile-pic {
+  margin-top: -5px;
+  margin-right: 18px;
+}
+.profile-pic img {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border: 2px solid #5d78ff;
+}
+
+.summary {
+  margin: 5px 0 5px;
+}
+
+/* Layouts */
+.page {
+  background: white;
+  width: 612px;
+  min-height: 792px;
+  display: block;
+  margin: 0 auto;
+  border-top: 10px solid #5d78ff;
+  padding: 36px 22px 30px 34px;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left-column {
+  float: left;
+  width: 160px;
+  margin-right: 20px;
+  word-wrap: break-all;
+}
+
+.right-column {
+  width: auto;
+  overflow: hidden;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+.item:last-child {
+  margin-bottom: 0;
+}
+
+@media print {
+  body {
+    margin: 0;
+  }
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 36px 0 30px;
+    box-shadow: none;
+  }
+  .page .resume-header,
+  .page .resume-content {
+    padding: 0 22px 0 34px;
+  }
+  .fa-external-link {
+    display: none;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+}
+/* Components */
+.info-tag-container {
+  margin-bottom: 5px;
+}
+.info-tag-container .fa {
+  font-size: 14px;
+  width: 12px;
+  margin-right: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+.info-tag-container .fa.fa-map-marker {
+  font-size: 16px;
+}
+.info-tag-container .fa.fa-mobile {
+  font-size: 18px;
+}
+.info-tag-container .fa.fa-envelope-o {
+  font-size: 12px;
+}
+.info-tag-container .fa.fa-desktop {
+  font-size: 11px;
+}
+.info-tag-container .fa.fa-external-link {
+  width: auto;
+  font-size: inherit;
+  vertical-align: text-top;
+}
+.info-tag-container .info-text {
+  font-size: 9px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 139px;
+}
+
+.references-container .fa {
+  font-size: 14px;
+}
+
+.education-container .location {
+  padding-bottom: 6px;
+  font-weight: 400;
+}
+.education-container .specialization {
+  text-transform: none;
+  font-style: italic;
+}
+  </style>
+</head>
+
+<body>
+  <main id="resume" class="page">
+    <header class="resume-header clearfix">
+      <div class="profile-header pull-left">
+        <h1>Evgenii Kolodin</h1>
+        <h2>Junior Developer</h2>
+      </div>
+      <div class="profile-pic pull-right">
+      </div>
+    </header>
+    <div class="resume-content">
+      <aside class="left-column">
+        <div class="container about-container">
+          <div class="title">
+            <h3>Contact</h3>
+            <div class="keyline"></div>
+          </div>
+        
+            <div class="info-tag-container">
+              <i class="fa fa-map-marker"></i>
+            
+              <h6 class="info-text">flexible</h6>
+            </div>
+        
+            <div class="info-tag-container">
+                        <i class="fa fa-envelope-o"></i>
+            
+                    <h6 class="info-text">
+                        <a href="mailto:kolodin.evg@gmail.com" target="_blank">
+                            kolodin.evg@gmail.com <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </h6>
+            </div>
+        
+        
+        
+                      <div class="info-tag-container">
+                        <i class="fa fa-github"></i>
+                      
+                        <h6 class="info-text">
+                          <a href="https://github.com/SleepyDude" target="_blank">
+                            SleepyDude <i class="fa fa-external-link" aria-hidden="true"></i>
+                          </a>
+                        </h6>
+                      </div>
+        </section>
+        <div class="skills-container">
+          <section class="container">
+              <div class="title">
+                <h3>Web Development</h3>
+                <div class="keyline"></div>
+              </div>
+              <h4 class="bold">Beginner</h4>
+              <ul class="minimal">
+                <li>
+                  <h6>Python</h6>
+                </li>
+                <li>
+                  <h6>FastAPI</h6>
+                </li>
+                <li>
+                  <h6>AWS</h6>
+                </li>
+                <li>
+                  <h6>DynamoDB</h6>
+                </li>
+                <li>
+                  <h6>AWS-lambda</h6>
+                </li>
+                <li>
+                  <h6>Flask</h6>
+                </li>
+                <li>
+                  <h6>GitHub-actions</h6>
+                </li>
+                <li>
+                  <h6>Dash</h6>
+                </li>
+                <li>
+                  <h6>Pytest</h6>
+                </li>
+                <li>
+                  <h6>PostgreSQL</h6>
+                </li>
+                <li>
+                  <h6>HTML</h6>
+                </li>
+                <li>
+                  <h6>CSS</h6>
+                </li>
+              </ul>
+          </section>
+          <section class="container">
+              <div class="title">
+                <h3>Desktop Development</h3>
+                <div class="keyline"></div>
+              </div>
+              <h4 class="bold">Beginner</h4>
+              <ul class="minimal">
+                <li>
+                  <h6>C++</h6>
+                </li>
+                <li>
+                  <h6>Python</h6>
+                </li>
+                <li>
+                  <h6>Qt5</h6>
+                </li>
+                <li>
+                  <h6>Tkinter</h6>
+                </li>
+              </ul>
+          </section>
+        </div>
+        <div class="container languages-container">
+          <div class="title">
+            <h3>Languages</h3>
+            <div class="keyline"></div>
+          </div>
+        
+          <ul class="minimal">
+            <li>
+              <h6>Russian <em>(Native speaker)</em></h6>
+            </li>
+            <li>
+              <h6>English <em>(Intermediate)</em></h6>
+            </li>
+          </ul>
+        </div>
+        <div class="container interests-container">
+          <div class="title">
+            <h3>Interests</h3>
+            <div class="keyline"></div>
+          </div>
+        
+            <section class="item">
+                <ul class="minimal">
+                      <li>Physics</li>
+                      <li>Monte-Carlo modelling</li>
+                      <li>Voxel technologies</li>
+                      <li>Photography</li>
+                      <li>Music</li>
+                </ul>
+            </section>
+        </div>
+      </aside>
+      <div class="right-column">
+        <div class="container summary-container">
+          <div class="title">
+            <h3>Summary</h3>
+            <div class="keyline"></div>
+          </div>
+          <p class="summary">
+            Graduate engineer with partial PhD and master-equvalent degree looking for a junior developer position. Breaked up with science activity in 2022. Haven&#x27;t any commercial development experience, but have a pet-projects using Python and C++. Familiar with technologies such as Flask and Dash web frameworks, also Qt5 and tkinter libraries. Passed web-development courses on python, perl and go in 2016-2017. Looking to grow as a backend or full-stack python web developer opportunity.
+          </p>
+        </div>
+        <div class="container education-container">
+          <div class="title">
+            <h3>Education</h3>
+            <div class="keyline"></div>
+          </div>
+            <section class="item">
+              <div class="section-header clearfix">
+                <h3 class="bold pull-left">
+                    National Research Nuclear University MEPhI
+                </h3>
+              </div>
+                <h5 class="location">Moscow, Russia</h5>
+        
+                  <h4 class="bold">Specialist (master-equivalent)</h4>
+                  <h5 class="italic pull-right">
+                      <span class="startDate">2012</span>
+                      <span class="endDate"> - 2018</span>
+                  </h5>
+                
+        
+                  <h5 class="specialization">Atomic Nuclear Plants: design, exploitation and decommissioning</h5>
+                </br>
+        
+                  <h4 class="bold">Postgraduate</h4>
+                  <h5 class="italic pull-right">
+                      <span class="startDate">2018</span>
+                      <span class="endDate"> - 2022</span>
+                  </h5>
+                
+        
+                  <h5 class="specialization">Nuclear power installations, including design, operation and decommissioning</h5>
+                
+            </section>
+        </div>
+        <div class="container work-container">
+          <div class="title">
+            <h3>Experience</h3>
+            <div class="keyline"></div>
+          </div>
+        
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  National Research Nuclear University MEPhI
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">04/2018</span>
+                  <span class="endDate"> - 08/2022</span>
+              </h5>
+            </div>
+        
+              <h4>Engineer</h4>
+        
+              <p class="summary">Was doing radiation safety calculations using FLUKA and GEANT4 Monte-Carlo frameworks.</p>
+        
+          </section>
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  OECD Nuclear Energy Agency (NEA)
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">02/2020</span>
+                  <span class="endDate"> - 08/2020</span>
+              </h5>
+            </div>
+        
+              <h4>Intern at the RWMD Scientific Secretariat</h4>
+        
+              <p class="summary">Internship in Radioactive Waste Management Committee. Contributed to the scientific conferences organisation process.</p>
+        
+          </section>
+        </div>
+        <div class="container work-container">
+          <div class="title">
+            <h3>Projects</h3>
+            <div class="keyline"></div>
+          </div>
+        
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  <a href="https://github.com/SleepyDude/CppGameProject" target="_blank">
+                    Space Invaders Game <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">09/2016</span>
+                  <span class="endDate"> - 01/2017</span>
+              </h5>
+            </div>
+              <p class="summary">Game based on Space Invaders Atari classic, made as a part of C++ development course provided by mail.ru group company.</p>
+        
+              <h5 class="specialization">
+                  C++
+                  Qt5
+                  Google Tests
+              </h5>
+          </section>
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  <a href="https://github.com/phantom-pose/phantom" target="_blank">
+                    Phantom-Pose <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">01/2015</span>
+                  <span class="endDate"> - 01/2018</span>
+              </h5>
+            </div>
+              <p class="summary">Specialist diploma project. Changing pose of a human voxel model (phantom) anatomically for the radiation protection purposes.</p>
+        
+              <h5 class="specialization">
+                  C++
+                  Qt5
+                  Google Tests
+              </h5>
+          </section>
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  <a href="https://github.com/SleepyDude/turTr" target="_blank">
+                    Turtle Translator <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">03/2022</span>
+                  <span class="endDate"> - 11/2022</span>
+              </h5>
+            </div>
+              <p class="summary">Application to translate english voice to russian text in real-time. It uses a bit modified speech_recognition library with Google Speech Recognition API for recognition speach stream and MyMemory API for text translation.</p>
+        
+              <h5 class="specialization">
+                  Python
+                  Tkinter
+                  Speech Recognition
+                  Text translation
+              </h5>
+          </section>
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  <a href="https://github.com/SleepyDude/detResAnalyzer" target="_blank">
+                    Anadet <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">08/2022</span>
+                  <span class="endDate"> - 11/2022</span>
+              </h5>
+            </div>
+              <p class="summary">Web application for handle and depict results from GEANT4 output .csv files using Dash plotly web framework. Part of my scientific research in nuclear physics area. Deployed with NGINX web-server and uwsgi http://koon.fvds.ru.</p>
+        
+              <h5 class="specialization">
+                  Python
+                  Dash
+                  Plotly
+                  web
+              </h5>
+          </section>
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  <a href="https://github.com/SleepyDude/oxypar" target="_blank">
+                    OxyPar <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">11/2022</span>
+                  <span class="endDate"> - 12/2022</span>
+              </h5>
+            </div>
+              <p class="summary">Console application for parse proxies from various sources using scrapy python framework.</p>
+        
+              <h5 class="specialization">
+                  Python
+                  Scrapy
+              </h5>
+          </section>
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  <a href="https://github.com/SleepyDude/link-manager" target="_blank">
+                    LinkManager <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">01/2023</span>
+                  <span class="endDate"> - Present</span>
+              </h5>
+            </div>
+              <p class="summary">Web Application using FastAPI python framework and AWS services for creating a LinkManager endpoints.</p>
+        
+              <h5 class="specialization">
+                  Python
+                  FastAPI
+                  AWS-lambda
+                  DynamoDB
+                  NoSQL
+                  GitHub-actions
+              </h5>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

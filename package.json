@@ -17,7 +17,7 @@
   "scripts": {
     "start": "npx gulp && npx resume serve --theme .",
     "build": "mkdir -p public && resume export public/index.html --theme \"$(pwd)\"",
-    "export": "npx gulp && npx resume export resume --format pdf --theme ."
+    "export-pdf": "npx gulp && npx resume export resume --format pdf --theme ."
   },
   "devDependencies": {
     "browser-sync": "^2.18.5",
@@ -57,7 +57,7 @@
     "handlebars": "^4.0.5",
     "handlebars-wax": "^6.1.0",
     "moment": "^2.17.1",
-    "resume-cli": "2.2.4",
+    "resume-cli": "^2.2.4",
     "swag": "^0.7.0"
   }
 }
