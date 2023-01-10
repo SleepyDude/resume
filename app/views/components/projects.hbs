@@ -5,17 +5,16 @@
   {{#each resume.projects}}
   <section class="item">
     {{> section-header-project name=this.name }}
-
     {{#if summary}}
       <p class="summary">{{summary}}</p>
     {{/if}}
 
-    {{#if highlights.length}}
-      <ul>
-        {{#each highlights}}
-        <li>{{.}}</li>
-        {{/each}}
-      </ul>
+    {{#if keywords.length}}
+      <h5 class="specialization">
+      {{#each keywords}}
+          {{. }}
+      {{/each}}
+      </h5>
     {{/if}}
   </section>
   {{/each}}

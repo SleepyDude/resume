@@ -1,144 +1,223 @@
+
 {
+  "meta": { "theme": "elegant" },
   "basics": {
-    "name": "Richard Hendriks",
-    "label": "Programmer",
-    "picture": "http://www.piedpiper.com/app/themes/pied-piper/dist/images/richard.png",
-    "email": "richard.hendriks@piedpiper.com",
-    "phone": "(912) 555-4321",
-    "website": "http://piedpiper.com",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+    "name": "Evgenii Kolodin",
+    "label": "Junior Developer",
+    "image": "https://i.imgur.com/5P2cBI5.jpg",
+    "email": "kolodin.evg@gmail.com",
+    "phone": "",
+    "url": "",
+    "summary": "Graduate engineer with partial PhD and master-equvalent degree looking for a junior developer position. Breaked up with science activity in 2022. Haven't any commercial development experience, but have a pet-projects using Python and C++. Familiar with technologies such as Flask and Dash web frameworks, also Qt5 and tkinter libraries. Passed web-development courses on python, perl and go in 2016-2017. Looking to grow as a backend or full-stack python web developer opportunity.",
     "location": {
-      "address": "Newell Road",
-      "postalCode": "94303",
-      "city": "Palo Alto",
-      "countryCode": "US",
-      "region": "CA"
+      "address": "flexible",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
+      "region": ""
     },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "siliconHBO",
-        "url": "https://twitter.com/siliconHBO"
-      },
-      {
-        "network": "Facebook",
-        "username": "SiliconHBO",
-        "url": "https://www.facebook.com/SiliconHBO"
-      },
-      {
-        "network": "Instagram",
-        "username": "siliconhbo",
-        "url": "https://www.instagram.com/siliconhbo/"
-      }
-    ]
+    "profiles": [{
+      "network": "GitHub",
+      "username": "SleepyDude",
+      "url": "https://github.com/SleepyDude"
+    }]
   },
-  "work": [
-    {
-      "company": "Pied Piper",
-      "position": "CEO/President",
-      "website": "http://piedpiper.com",
-      "startDate": "2014-04-13",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
-      "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
-      ]
-    },
-    {
-      "company": "Hooli",
-      "position": "Software Engineer",
-      "website": "http://www.hooli.xyz/",
-      "startDate": "2013-01-01",
-      "endDate": "2014-04-06",
-      "summary": "Worked on optimizing the backend algorithms for Hooli"
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "website": "http://coderdojo.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
-      "highlights": [
-        "Awarded 'Teacher of the Month'"
-      ]
-    }
-  ],
+  "work": [{
+    "name": "National Research Nuclear University MEPhI",
+    "position": "Engineer",
+    "url": "https://eng.mephi.ru/",
+    "startDate": "2018-04-18",
+    "endDate": "2022-08-31",
+    "summary": "Was doing radiation safety calculations using FLUKA and GEANT4 Monte-Carlo frameworks."
+  }, 
+  {
+    "name": "OECD Nuclear Energy Agency (NEA)",
+    "position": "Intern at the RWMD Scientific Secretariat",
+    "url": "https://www.oecd-nea.org/",
+    "startDate": "2020-02-12",
+    "endDate": "2020-08-12",
+    "summary": "Internship in Radioactive Waste Management Committee. Contributed to the scientific conferences organisation process."
+  }],
   "education": [
     {
-      "institution": "Stanford",
-      "area": "Computer Science",
-      "studyType": "B.S",
-      "location": "Palo Alto, CA",
-      "specialization": "Machine Learning",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "gpa": "GPA 4.0",
-      "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
+      "institution": "National Research Nuclear University MEPhI",
+      "url": "https://eng.mephi.ru/",
+      "location": "Moscow, Russia",
+      "program": [
+        {
+          "studyType": "Specialist (master-equivalent)",
+          "startDate": "2012-09-01",
+          "endDate": "2018-01-31",
+          "br": "True",
+          "specialization": "Atomic Nuclear Plants: design, exploitation and decommissioning"
+        },
+        {
+          "studyType": "Postgraduate",
+          "startDate": "2018-09-01",
+          "endDate": "2022-07-31",
+          "specialization": "Nuclear power installations, including design, operation and decommissioning"
+        }
       ]
     }
   ],
-  "awards": [
-    {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
-    }
-  ],
-  "publications": [
-    {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
-    }
-  ],
+  "certificates": [{
+    "name": "Certificate C++",
+    "date": "2021-11-07",
+    "issuer": "Computer Science Center",
+    "url": "https://stepik.org/cert/132986"
+  }],
   "skills": [
-    {
-      "name": "Web Development",
-      "level": "Master",
+  {
+    "name": "Web Development",
+    "level": "Beginner",
+    "keywords": [
+      "Python",
+      "FastAPI",
+      "AWS",
+      "DynamoDB",
+      "AWS-lambda",
+      "Flask",
+      "GitHub-actions",
+      "Dash",
+      "Pytest",
+      "PostgreSQL",
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+      "name": "Desktop Development",
+      "level": "Beginner",
       "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
-      ]
-    },
-    {
-      "name": "Compression",
-      "level": "Master",
-      "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
+        "C++",
+        "Python",
+        "Qt5",
+        "Tkinter"
       ]
     }
   ],
   "languages": [
-    {
+  {
+    "language": "Russian",
+    "fluency": "Native speaker"
+  },
+  {
       "language": "English",
-      "fluency": "Native speaker"
-    }
+      "fluency": "Intermediate"
+  }
   ],
-  "interests": [
+  "interests": [{
+    "keywords": [
+      "Physics",
+      "Monte-Carlo modelling",
+      "Voxel technologies",
+      "Photography",
+      "Music"
+    ]
+  }],
+  "projects": [
+  {
+    "name": "Space Invaders Game",
+    "description": "Game based on Space Invaders atari classic, made as a part of c++ development course provided by mail.ru group company.",
+    "summary":
+      "Game based on Space Invaders Atari classic, made as a part of C++ development course provided by mail.ru group company."
+    ,
+    "keywords": [
+      "C++",
+      "Qt5",
+      "Google Tests"
+    ],
+    "startDate": "2016-09-01",
+    "endDate": "2017-01-01",
+    "url": "https://github.com/SleepyDude/CppGameProject",
+    "type": "Desktop application"
+  },
+  {
+    "name": "Phantom-Pose",
+    "description": "Changing pose of a human voxel model (phantom) anatomically for the radiation protection purposes.",
+    "summary":
+      "Specialist diploma project. Changing pose of a human voxel model (phantom) anatomically for the radiation protection purposes."
+    ,
+    "keywords": [
+      "C++",
+      "Qt5",
+      "Google Tests"
+    ],
+    "startDate": "2015-01-01",
+    "endDate": "2018-01-31",
+    "url": "https://github.com/phantom-pose/phantom",
+    "roles": [
+      "Core functionality development"
+    ],
+    "type": "Desktop application"
+  },
     {
-      "name": "Wildlife",
+      "name": "Turtle Translator",
+      "description": "Application to translate english voice to russian text in real-time. It uses a bit modified speech_recognition library with Google Speech Recognition API for recognition speach stream and MyMemory API for text translation.",
+      "summary":
+        "Application to translate english voice to russian text in real-time. It uses a bit modified speech_recognition library with Google Speech Recognition API for recognition speach stream and MyMemory API for text translation."
+      ,
       "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
-    }
-  ],
-  "references": [
+        "Python",
+        "Tkinter",
+        "Speech Recognition",
+        "Text translation"
+      ],
+      "startDate": "2022-03-01",
+      "endDate": "2022-11-01",
+      "url": "https://github.com/SleepyDude/turTr",
+      "type": "Desktop application"
+    },
     {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard. That is all."
+      "name": "Anadet",
+      "description": "Web application for handle and depict results from GEANT4 output .csv files using Dash plotly web framework",
+      "summary":
+        "Web application for handle and depict results from GEANT4 output .csv files using Dash plotly web framework. Part of my scientific research in nuclear physics area. Deployed with NGINX web-server and uwsgi http://koon.fvds.ru."
+      ,
+      "keywords": [
+        "Python",
+        "Dash",
+        "Plotly",
+        "web"
+      ],
+      "startDate": "2022-08-20",
+      "endDate": "2022-11-01",
+      "url": "https://github.com/SleepyDude/detResAnalyzer",
+      "type": "Web application"
+    },
+    {
+      "name": "OxyPar",
+      "description": "Proxy parser using scrapy python framework",
+      "summary":
+        "Console application for parse proxies from various sources using scrapy python framework."
+      ,
+      "keywords": [
+        "Python",
+        "Scrapy"
+      ],
+      "startDate": "2022-11-15",
+      "endDate": "2022-12-01",
+      "url": "https://github.com/SleepyDude/oxypar",
+      "type": "Console Application"
+    },
+    {
+      "name": "LinkManager",
+      "description": "API for creating a Link Manager Application",
+      "summary":
+        "Web Application using FastAPI python framework and AWS services for creating a LinkManager endpoints."
+      ,
+      "keywords": [
+        "Python",
+        "FastAPI",
+        "AWS-lambda",
+        "DynamoDB",
+        "NoSQL",
+        "GitHub-actions"
+      ],
+      "startDate": "2023-01-04",
+      "endDate": "present",
+      "url": "https://github.com/SleepyDude/link-manager",
+      "type": "Web Application"
     }
   ]
 }

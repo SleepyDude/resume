@@ -10,5 +10,17 @@
     {{/if}}
   </h3>
   {{/if}}
+  <h5 class="italic pull-right">
+    {{#if startDate}}
+      <span class="startDate">{{formatDateWork startDate}}</span>
+    {{#ifEquals endDate "present"}}
+      <span class="endDate"> - Present</span>
+    {{/ifEquals}}
+    {{#ifNotEquals endDate "present"}}
+      <span class="endDate"> - {{formatDateWork endDate}}</span>
+    {{/ifNotEquals}}
+    {{else if releaseDate}}
+      {{formatDate releaseDate}}
+    {{/if}}
   </h5>
 </div>
