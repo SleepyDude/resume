@@ -34,8 +34,9 @@ bower_components
 .tmp
 
 # Public folder from build
-public/styles
-public/views
+public
+# public/styles
+# public/views
 # public/index*
 
 # Keep your personal resume.json private and any generated pdf's
