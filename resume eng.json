@@ -1,0 +1,228 @@
+
+{
+  "meta": { "theme": "elegant" },
+  "basics": {
+    "name": "Evgenii Kolodin",
+    "label": "Developer",
+    "image": "https://i.imgur.com/5P2cBI5.jpg",
+    "email": "kolodin.evg@gmail.com",
+    "phone": "",
+    "url": "",
+    "summary": "Graduate engineer with a partial PhD and master-equivalent degree looking for a developer position. With a background as a scientist, was extensively using his programming skills in C++ and Python to solve problems of radiation safety and conduct ionising radiation transport modelling with the Monte-Carlo method and GEANT4 framework support. Also, have several pet projects related to web and desktop development. Familiar with technologies such as FastAPI and Flask, Qt5 and tkinter libraries. Passed development courses in C++, python, perl and go in 2016-2017. Looking for an opportunity to grow as a developer to improve my competencies and participate in interesting projects.",
+    "location": {
+      "address": "flexible",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
+      "region": ""
+    },
+    "profiles": [{
+      "network": "GitHub",
+      "username": "SleepyDude",
+      "url": "https://github.com/SleepyDude"
+    }]
+  },
+  "work": [{
+    "name": "National Research Nuclear University MEPhI",
+    "position": "Engineer",
+    "url": "https://eng.mephi.ru/",
+    "startDate": "2018-04-18",
+    "endDate": "2022-08-31",
+    "summary": "Was doing radiation safety calculations using FLUKA and GEANT4 Monte-Carlo frameworks."
+  }, 
+  {
+    "name": "OECD Nuclear Energy Agency (NEA)",
+    "position": "Intern at the RWMD Scientific Secretariat",
+    "url": "https://www.oecd-nea.org/",
+    "startDate": "2020-02-12",
+    "endDate": "2020-08-12",
+    "summary": "Internship in Radioactive Waste Management Committee. Contributed to the scientific conferences organisation process, ICGR-6 in particular."
+  }],
+  "education": [
+    {
+      "institution": "National Research Nuclear University MEPhI",
+      "url": "https://eng.mephi.ru/",
+      "location": "Moscow, Russia",
+      "program": [
+        {
+          "studyType": "Specialist (master-equivalent)",
+          "startDate": "2012-09-01",
+          "endDate": "2018-01-31",
+          "br": "True",
+          "specialization": "Atomic Nuclear Plants: design, exploitation and decommissioning"
+        },
+        {
+          "studyType": "Postgraduate",
+          "startDate": "2018-09-01",
+          "endDate": "2022-07-31",
+          "specialization": "Nuclear power installations, including design, operation and decommissioning"
+        }
+      ]
+    }
+  ],
+  "certificates": [{
+    "name": "Certificate C++",
+    "date": "2021-11-07",
+    "issuer": "Computer Science Center",
+    "url": "https://stepik.org/cert/132986"
+  }],
+  "skills": [
+  {
+    "name": "Web Development",
+    "level": "",
+    "keywords": [
+      "Python",
+      "FastAPI",
+      "AWS",
+      "DynamoDB",
+      "AWS-lambda",
+      "Flask",
+      "GitHub-actions",
+      "Dash",
+      "Pytest",
+      "PostgreSQL",
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+      "name": "Desktop Development",
+      "level": "",
+      "keywords": [
+        "C++",
+        "Python",
+        "Qt5",
+        "Tkinter"
+      ]
+    }
+  ],
+  "languages": [
+  {
+    "language": "Russian",
+    "fluency": "Native speaker"
+  },
+  {
+      "language": "English",
+      "fluency": "Intermediate"
+  }
+  ],
+  "interests": [{
+    "keywords": [
+      "Physics",
+      "Monte-Carlo modelling",
+      "Voxel technologies",
+      "Photography",
+      "Music"
+    ]
+  }],
+  "projects": [
+  {
+    "name": "Space Invaders Game",
+    "description": "Game based on Space Invaders atari classic, made as a part of c++ development course provided by mail.ru group company.",
+    "summary":
+      "Game based on Space Invaders Atari classic made as a part of a C++ development course provided by mail.ru group company."
+    ,
+    "keywords": [
+      "C++",
+      "Qt5",
+      "Google Tests"
+    ],
+    "startDate": "2016-09-01",
+    "endDate": "2017-01-01",
+    "url": "https://github.com/SleepyDude/CppGameProject",
+    "type": "Desktop application"
+  },
+  {
+    "name": "Phantom-Pose",
+    "description": "Changing pose of a human voxel model (phantom) anatomically for the radiation protection purposes.",
+    "summary":
+      "Specialist diploma project. Anatomically correct pose changing of a human voxel model (phantom) for radiation protection purposes."
+    ,
+    "keywords": [
+      "C++",
+      "Qt5",
+      "Google Tests"
+    ],
+    "startDate": "2015-01-01",
+    "endDate": "2018-01-31",
+    "url": "https://github.com/phantom-pose/phantom",
+    "roles": [
+      "Core functionality development"
+    ],
+    "type": "Desktop application"
+  },
+    {
+      "name": "Turtle Translator",
+      "description": "Application to translate english voice to russian text in real-time. It uses a bit modified speech_recognition library with Google Speech Recognition API for recognition speach stream and MyMemory API for text translation.",
+      "summary":
+        "Application to translate English voice to Russian text in real-time. It uses a bit-modified `speech_recognition` library with Google Speech Recognition API for recognition and MyMemory API for text translation."
+      ,
+      "keywords": [
+        "Python",
+        "Tkinter",
+        "Speech Recognition",
+        "Text translation"
+      ],
+      "startDate": "2022-03-01",
+      "endDate": "2022-11-01",
+      "url": "https://github.com/SleepyDude/turTr",
+      "type": "Desktop application"
+    },
+    {
+      "name": "Anadet",
+      "description": "Web application for handle and depict results from GEANT4 output .csv files using Dash plotly web framework",
+      "summary":
+        "Web application for handling and depicting results from GEANT4 output .csv files using Dash Plotly web framework. Part of the scientific research in nuclear physics. Deployed with NGINX web server and uwsgi http://koon.fvds.ru."
+      ,
+      "keywords": [
+        "Python",
+        "Dash",
+        "Plotly",
+        "web"
+      ],
+      "startDate": "2022-08-20",
+      "endDate": "2022-11-01",
+      "url": "https://github.com/SleepyDude/detResAnalyzer",
+      "type": "Web application"
+    },
+    {
+      "name": "OxyPar",
+      "description": "Proxy parser using scrapy python framework",
+      "summary":
+        "Console application for parsing proxies from various sources using scrapy python framework."
+      ,
+      "keywords": [
+        "Python",
+        "Scrapy"
+      ],
+      "startDate": "2022-11-15",
+      "endDate": "2022-12-01",
+      "url": "https://github.com/SleepyDude/oxypar",
+      "type": "Console Application"
+    },
+    {
+      "name": "LinkManager",
+      "description": "API for creating a Link Manager Application",
+      "summary":
+        "Web Application with LinkManager endpoints and authentication based on JWT. Build with FastAPI python framework and AWS services."
+      ,
+      "keywords": [
+        "Python",
+        "FastAPI",
+        "Swagger",
+        "JWT",
+        "AWS-lambda",
+        "DynamoDB",
+        "NoSQL",
+        "GitHub-actions"
+      ],
+      "startDate": "2023-01-04",
+      "endDate": "present",
+      "url": "https://github.com/SleepyDude/link-manager",
+      "type": "Web Application"
+    }
+  ]
+}
