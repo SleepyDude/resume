@@ -1,0 +1,719 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <title>Евгений Колодин</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+    /* Utils */ /*----- Colors -----*/
+/*----- Fonts -----*/
+/*----- Dimensions and sizes -----*/
+/* Base */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v26/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_GbQbMZhKg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v26/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_N_XbMZhKg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background: #f8f8f8;
+  margin: 50px 0 100px;
+  letter-spacing: 0.06px;
+  color: #39424B;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+h3 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
+h3.bold {
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+h4.bold {
+  font-weight: 700;
+}
+
+h5 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+}
+h5.italic {
+  font-style: italic;
+}
+
+h6 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #2895F1;
+}
+a .fa-external-link {
+  font-size: 10px;
+  vertical-align: text-top;
+}
+
+p,
+li {
+  font-size: 11px;
+}
+
+blockquote {
+  font-size: 11px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 10px 25px;
+}
+
+em {
+  color: #999;
+}
+
+ul {
+  margin: 10px 0 0;
+  -webkit-padding-start: 25px;
+}
+ul li {
+  padding-left: 10px;
+}
+ul.minimal {
+  list-style: none;
+  padding: 0;
+}
+ul.minimal li {
+  margin-bottom: 3px;
+  padding-left: 0;
+}
+ul.two-column {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 28px;
+  column-count: 2;
+  column-gap: 28px;
+}
+ul.two-column li {
+  padding-left: 0;
+}
+
+@page {
+  size: A4;
+}
+.container {
+  padding-top: 15px;
+}
+
+.keyline {
+  width: 45px;
+  margin: 8px 0 10px;
+  border-top: 1px solid #5d78ff;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.profile-pic {
+  margin-top: -5px;
+  margin-right: 18px;
+}
+.profile-pic img {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border: 2px solid #5d78ff;
+}
+
+.summary {
+  margin: 5px 0 5px;
+}
+
+/* Layouts */
+.page {
+  background: white;
+  width: 612px;
+  min-height: 792px;
+  display: block;
+  margin: 0 auto;
+  border-top: 10px solid #5d78ff;
+  padding: 36px 22px 30px 34px;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left-column {
+  float: left;
+  width: 160px;
+  margin-right: 20px;
+  word-wrap: break-all;
+}
+
+.right-column {
+  width: auto;
+  overflow: hidden;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+.item:last-child {
+  margin-bottom: 0;
+}
+
+@media print {
+  body {
+    margin: 0;
+  }
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 36px 0 30px;
+    box-shadow: none;
+  }
+  .page .resume-header,
+  .page .resume-content {
+    padding: 0 22px 0 34px;
+  }
+  .fa-external-link {
+    display: none;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+}
+/* Components */
+.info-tag-container {
+  margin-bottom: 5px;
+}
+.info-tag-container .fa {
+  font-size: 14px;
+  width: 12px;
+  margin-right: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+.info-tag-container .fa.fa-map-marker {
+  font-size: 16px;
+}
+.info-tag-container .fa.fa-mobile {
+  font-size: 18px;
+}
+.info-tag-container .fa.fa-envelope-o {
+  font-size: 12px;
+}
+.info-tag-container .fa.fa-desktop {
+  font-size: 11px;
+}
+.info-tag-container .fa.fa-external-link {
+  width: auto;
+  font-size: inherit;
+  vertical-align: text-top;
+}
+.info-tag-container .info-text {
+  font-size: 9px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 139px;
+}
+
+.references-container .fa {
+  font-size: 14px;
+}
+
+.education-container .location {
+  padding-bottom: 6px;
+  font-weight: 400;
+}
+.education-container .specialization {
+  text-transform: none;
+  font-style: italic;
+}
+  </style>
+</head>
+
+<body>
+  <main id="resume" class="page">
+    <header class="resume-header clearfix">
+      <div class="profile-header pull-left">
+        <h1>Евгений Колодин</h1>
+        <h2>Backend developer</h2>
+      </div>
+      <div class="profile-pic pull-right">
+      </div>
+    </header>
+    <div class="resume-content">
+      <aside class="left-column">
+        <div class="container about-container">
+          <div class="title">
+            <h3>Contact</h3>
+            <div class="keyline"></div>
+          </div>
+        
+            <div class="info-tag-container">
+              <i class="fa fa-map-marker"></i>
+            
+              <h6 class="info-text">Непостоянный</h6>
+            </div>
+        
+            <div class="info-tag-container">
+                        <i class="fa fa-envelope-o"></i>
+            
+                    <h6 class="info-text">
+                        <a href="mailto:kolodin.evg@gmail.com" target="_blank">
+                            kolodin.evg@gmail.com <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </h6>
+            </div>
+        
+        
+        
+                      <div class="info-tag-container">
+                        <i class="fa fa-github"></i>
+                      
+                        <h6 class="info-text">
+                          <a href="https://github.com/SleepyDude" target="_blank">
+                            SleepyDude <i class="fa fa-external-link" aria-hidden="true"></i>
+                          </a>
+                        </h6>
+                      </div>
+        </section>
+        <div class="skills-container">
+          <section class="container">
+              <div class="title">
+                <h3>Языки программирования</h3>
+                <div class="keyline"></div>
+              </div>
+              <ul class="minimal">
+                <li>
+                  <h6>JavaScript</h6>
+                </li>
+                <li>
+                  <h6>TypeScript</h6>
+                </li>
+                <li>
+                  <h6>Python</h6>
+                </li>
+                <li>
+                  <h6>C++</h6>
+                </li>
+              </ul>
+          </section>
+          <section class="container">
+              <div class="title">
+                <h3>Фреймворки</h3>
+                <div class="keyline"></div>
+              </div>
+              <ul class="minimal">
+                <li>
+                  <h6>NestJS</h6>
+                </li>
+                <li>
+                  <h6>FastAPI</h6>
+                </li>
+                <li>
+                  <h6>Flask</h6>
+                </li>
+                <li>
+                  <h6>Dash</h6>
+                </li>
+                <li>
+                  <h6>Qt5</h6>
+                </li>
+                <li>
+                  <h6>Tkinter</h6>
+                </li>
+              </ul>
+          </section>
+          <section class="container">
+              <div class="title">
+                <h3>Базы данных</h3>
+                <div class="keyline"></div>
+              </div>
+              <ul class="minimal">
+                <li>
+                  <h6>PostgreSQL</h6>
+                </li>
+                <li>
+                  <h6>DynamoDB</h6>
+                </li>
+              </ul>
+          </section>
+          <section class="container">
+              <div class="title">
+                <h3>Технологии</h3>
+                <div class="keyline"></div>
+              </div>
+              <ul class="minimal">
+                <li>
+                  <h6>Docker</h6>
+                </li>
+                <li>
+                  <h6>Docker-compose</h6>
+                </li>
+                <li>
+                  <h6>Git</h6>
+                </li>
+                <li>
+                  <h6>GitHub-actions</h6>
+                </li>
+                <li>
+                  <h6>AWS, AWS-lambda</h6>
+                </li>
+              </ul>
+          </section>
+        </div>
+        <div class="container languages-container">
+          <div class="title">
+            <h3>Languages</h3>
+            <div class="keyline"></div>
+          </div>
+        
+          <ul class="minimal">
+            <li>
+              <h6>Русский <em>(Родной язык)</em></h6>
+            </li>
+            <li>
+              <h6>Английский <em>(Intermediate)</em></h6>
+            </li>
+          </ul>
+        </div>
+        <div class="container interests-container">
+          <div class="title">
+            <h3>Interests</h3>
+            <div class="keyline"></div>
+          </div>
+        
+            <section class="item">
+                <ul class="minimal">
+                      <li>Физика</li>
+                      <li>Моделирование методом Монте-Карло</li>
+                      <li>Воксельные технологии</li>
+                      <li>Фотография</li>
+                      <li>Музыка</li>
+                </ul>
+            </section>
+        </div>
+      </aside>
+      <div class="right-column">
+        <div class="container summary-container">
+          <div class="title">
+            <h3>Summary</h3>
+            <div class="keyline"></div>
+          </div>
+          <p class="summary">
+            Дипломированный инженер-физик, закончл аспирантуру по направлению радиационной безопасности. Активно ищу себя в сфере IT, занимаюсь backend разработкой. Преимущественно использую js (NestJS) и python (FastAPI). Также имею некоторый опыт написания десктопных приложений на C++ (Qt) и python (tkinter). Мне нравится уделять внимание хорошей архитектуре приложений и лучшим практикам, поэтому мне приглянулся NestJS. Есть опыт использования контейнеризации и построения микросервисной архитектуры приложения. Хочу развить свои навыки, чтобы создавать что-то уникальное и полезное, иметь возможность воплощать свои идеи в жизнь.
+          </p>
+        </div>
+        <div class="container education-container">
+          <div class="title">
+            <h3>Education</h3>
+            <div class="keyline"></div>
+          </div>
+            <section class="item">
+              <div class="section-header clearfix">
+                <h3 class="bold pull-left">
+                    Национальный Исследовательский Ядерный Университет МИФИ
+                </h3>
+              </div>
+                <h5 class="location">Moscow, Russia</h5>
+        
+                  <h4 class="bold">Специалитет</h4>
+                  <h5 class="italic pull-right">
+                      <span class="startDate">2012</span>
+                      <span class="endDate"> - 2018</span>
+                  </h5>
+                
+        
+                  <h5 class="specialization">Атомные электростанции: эксплуатация, проектирование и инжиниринг.</h5>
+                </br>
+        
+                  <h4 class="bold">Аспирантура</h4>
+                  <h5 class="italic pull-right">
+                      <span class="startDate">2018</span>
+                      <span class="endDate"> - 2022</span>
+                  </h5>
+                
+        
+                  <h5 class="specialization">Ядерные физические установки, включая проектирование, эксплуатацию и вывод из эксплуатации</h5>
+                
+            </section>
+        </div>
+        <div class="container work-container">
+          <div class="title">
+            <h3>Experience</h3>
+            <div class="keyline"></div>
+          </div>
+        
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  Национальный Исследовательский Ядерный Университет МИФИ
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">04/2018</span>
+                  <span class="endDate"> - 08/2022</span>
+              </h5>
+            </div>
+        
+              <h4>Инженер</h4>
+        
+              <p class="summary">Проведение расчетов радиационной безопасности методом Монте-Карло с использованием FLUKA (Fortran) и GEANT4. (C++)</p>
+        
+          </section>
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  ОРКК НИИ Космического Приборостроения
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">07/2019</span>
+                  <span class="endDate"> - 02/2020</span>
+              </h5>
+            </div>
+        
+              <h4>Инженер-исследователь</h4>
+        
+              <p class="summary">Проведение расчетов радиационной стойкости методом Монте-Карло с использованием GEANT4. (C++)</p>
+        
+          </section>
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  OECD Nuclear Energy Agency (NEA)
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">02/2020</span>
+                  <span class="endDate"> - 08/2020</span>
+              </h5>
+            </div>
+        
+              <h4>Стажер в научном секретариате отдела по обращению с радиоактивными отходами</h4>
+        
+              <p class="summary">Помощь в организации международных научных конференций (ICGR-6).</p>
+        
+          </section>
+        </div>
+        <div class="container work-container">
+          <div class="title">
+            <h3>Projects</h3>
+            <div class="keyline"></div>
+          </div>
+        
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  <a href="https://github.com/SleepyDude/CppGameProject" target="_blank">
+                    Игра &#x27;Космические захватчики&#x27; <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">09/2016</span>
+                  <span class="endDate"> - 01/2017</span>
+              </h5>
+            </div>
+              <p class="summary">Вдохновлена классической &#x27;Space Invaders&#x27; от Atari. Была разработана в рамках семестрового курса по С++ от mail.ru group.</p>
+        
+              <h5 class="specialization">
+                  C++
+                  Qt5
+                  Google Tests
+              </h5>
+          </section>
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  <a href="https://github.com/phantom-pose/phantom" target="_blank">
+                    Phantom-Pose <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">01/2015</span>
+                  <span class="endDate"> - 01/2018</span>
+              </h5>
+            </div>
+              <p class="summary">Дипломный проект специалитета. Программа для анатомически корректного изменения позы воксельной модели человека для задач радиационной безопасности.</p>
+        
+              <h5 class="specialization">
+                  C++
+                  Qt5
+                  Google Tests
+              </h5>
+          </section>
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  <a href="https://github.com/SleepyDude/turTr" target="_blank">
+                    Turtle Translator <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">03/2022</span>
+                  <span class="endDate"> - 11/2022</span>
+              </h5>
+            </div>
+              <p class="summary">Приложение для перевода английской речи в текст на русском в режиме реального времени. Использует слегка модифицированный пакет &#x60;speech_recognition&#x60; с Google Speech Recognition API для распознавания и MyMemory API для перевода текста.</p>
+        
+              <h5 class="specialization">
+                  Python
+                  Tkinter
+                  Speech Recognition
+                  Text translation
+              </h5>
+          </section>
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  <a href="https://github.com/SleepyDude/detResAnalyzer" target="_blank">
+                    Anadet <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">08/2022</span>
+                  <span class="endDate"> - 11/2022</span>
+              </h5>
+            </div>
+              <p class="summary">Веб-приложение для обработки и результатов расчетов из выходного .csv файла GEANT4, используется python веб фреймворк Dash. Является частью научной работы.</p>
+        
+              <h5 class="specialization">
+                  Python
+                  Dash
+                  Plotly
+                  web
+              </h5>
+          </section>
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  <a href="https://github.com/SleepyDude/mini-kinopoisk" target="_blank">
+                    Mini-Kinopoisk <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">04/2023</span>
+                  <span class="endDate"> - 05/2023</span>
+              </h5>
+            </div>
+              <p class="summary">API для ресурса - базы данных фильмов, как &#x27;Кинопоиск&#x27; или IVI с ограниченным функционалом. Проект был разработан в команде из 3 человек на NestJS с использованием микросервисной архитектуры.</p>
+        
+              <h5 class="specialization">
+                  JavaScript
+                  TypeScript
+                  NestJS
+                  PostgreSQL
+                  Docker
+                  Sequelize
+                  JWT
+              </h5>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
