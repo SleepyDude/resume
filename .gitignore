@@ -43,3 +43,8 @@ public
 resume.json
 resume_*.json
 resume.pdf
+
+resume*
+vacancy*
+balls*
+about*
